@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bodoni-moda-bold {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.bodoni-moda-normal {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-bold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:  800;
+    font-style: normal;
+}
+
+.raleway-semibold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:  500;
+    font-style: normal;
+}
+
+.raleway-normal {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:  300;
+    font-style: normal;
+}
+
+#root {
+   @apply flex flex-col items-center justify-center md:flex-row md:flex-wrap md:justify-center
+}
+
+#cartModal {
+    @apply fixed inset-0 flex flex-col items-start justify-start md:flex-row md:flex-wrap md:justify-center z-50 bg-black bg-opacity-50
+}
+
+#cartModal.show {
+    display: unset;
+}
+
+#cartModal.hide {
+    display: none;
+}
+
+.cart-modal-btn .btn-inner {
+    @apply text-black
+}
+
+.cart-modal-btn .btn-inner span.num-total {
+    @apply bg-black text-white w-7 h-7 text-sm rounded-full absolute top-5 right-5 p-1
+}
+
+.cart-modal-btn .btn-inner:hover {
+    @apply text-black text-stone-500
+}
+
+.cart-modal-btn .btn-inner:hover span.num-total {
+    @apply bg-stone-500
+}
+
+.cart-modal-close-btn {
+    @apply text-black hover:text-stone-500 text-xl lg:text-4xl absolute top-0 right-0 
+}
