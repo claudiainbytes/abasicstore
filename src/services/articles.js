@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = '/articles.json'
+const baseUrl = './articles.json'
 
 const getAll = async () => {
   const request = axios.get(baseUrl)

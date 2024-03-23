@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://claudiainbytes.github.io/abasicstore",
+  "homepage":"https://claudiainbytes.github.io/abasicstore/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
